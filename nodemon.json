@@ -1,0 +1,7 @@
+{
+  "watch": ["*.js", "public", "templates", "uploads"],
+  "ext": "js,json,html,css",
+  "ignore": ["uploads/*", "public/merged.pdf", "*.pdf"],
+  "main": "server.js",
+  "delay": "250"
+}

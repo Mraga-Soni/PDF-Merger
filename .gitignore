@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Temporary folders
+uploads/
+
+# Merged PDFs (very important)
+public/*.pdf
+*.pdf
+
+# Logs and environment
+*.log
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/

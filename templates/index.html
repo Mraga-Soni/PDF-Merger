@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDFX - PDF Merger</title>
+
+    <link rel="icon" href="https://fav.farm/📑" />
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2>📑PDFX</h2>
+
+        <div class="nav-right">
+            <button id="darkToggle">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <h1 class="tagline">Merge Your PDFs Effortlessly 🔗</h1>
+
+        <p class="subtext">
+            Upload multiple PDF files and combine them into a single document - Quickly and Easily.
+        </p>
+
+        <p class="upload-text">📂Select PDF files to merge</p>
+
+        <form id="pdfForm" method="post" action="/merge" enctype="multipart/form-data">
+
+            <div class="file-box">
+                <input type="file" id="pdfInput" name="pdfs" multiple accept=".pdf" required style="width: 100%;">
+            </div>
+
+            <button type="submit">Merge PDF</button>
+
+        </form>
+
+        <!-- Error Alert -->
+        <div id="error-alert" class="error-alert hidden">
+            <span id="error-text"></span>
+            <button onclick="hideError()" class="close-btn" title="Close">×</button>
+        </div>
+
+        <!-- Loader -->
+        <div id="loader" class="hidden">
+            <div class="spinner"></div>
+            <p>Merging PDFs...</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 PdfX | Built with Love using Node.js 💌</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
